@@ -76,14 +76,80 @@
           <div class="modal-background is-hidden" data-modal>
             <div class="modal">
               <button class="modal-close-button" data-modal-close>
-                <div class="modal-icon-box">
-                  <svg class="modal-icon">
+                  
+              </button>
+              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+              <div class="modal-form" role="modal-form">
+                <div class="label-field modal-form">
+                  <label name="name" class="label" for="name"> Ім'я</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="modal-input"
+                  />
+                  <svg class="icon-input">
                     <use
-                      href="./images/logocompany-sprite.svg#icon-close-black-18dp-2-1 "
+                      href="./images/input-icons.sprite.svg#icon-person-black-18dp-1"
                     ></use>
                   </svg>
                 </div>
-              </button>
+                <div class="label-field modal-form">
+                  <label name="telephone" class="label" for="telephone">
+                    Телефон
+                  </label>
+                  <input
+                    type="tel"
+                    name="telephone"
+                    id="telephone"
+                    class="modal-input"
+                  />
+                  <svg class="icon-input">
+                    <use
+                      href="./images/input-icons.sprite.svg#icon-phone-black-18dp-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="label-field modal-form">
+                  <label name="email" class="label" for="email">Пошта </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="modal-input"
+                  />
+                  <svg class="icon-input">
+                    <use
+                      href="./images/input-icons.sprite.svg#icon-email-black-18dp-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="label-field modal-form">
+                  <label name="comment" class="label" for="comment">
+                    Коментар
+                  </label>
+                  <textarea
+                    class="modal-textarea"
+                    name="comment"
+                    cols="30"
+                    rows="10"
+                    placeholder="Введіть текст"
+                    id="comment"
+                  ></textarea>
+                </div>
+                <div class="checkbox-box" >
+                  <input
+                    type="checkbox"
+                    id="input-checkbox"
+                    class="checkbox-input"
+                  />
+                  <label for="input-checkbox" class="checkbox-label"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a class="checkbox-link" href="#">Умови договору</a>
+                  </label>
+                </div>
+                <button type="submit" class="modal-btn" > Відправити</button>
+              </div>
             </div>
           </div>
         </div>
@@ -464,6 +530,24 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form" role="footer-form">
+          <label for="footer-email" class="footer-email-title"
+            >Підпишіться на розсилку
+            <input
+              type="text"
+              name="footer-email"
+              id="footer-email"
+              class="footer-input-email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="submit" class="footer-input-button">
+            Підписатися
+            <svg class="footer-input-icon">
+              <use href="./images/logocompany-sprite.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
